@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Duplicate Letters</title>
+</head>
+<body>
+    <h1>Program Menghapus Huruf Duplikat (Duplicate Letter) dalam Kalimat</h1>
+    <p>
+        Did not see the alert window? Please
+        <button onClick="window.location.reload();">Reload</button> this page.
+
+    </p>
+    
+    <script>
+        const unique = prompt("Masukkan kalimat: "); //Ambil inputan
+        
+        //function
+        function removeDuplicate(string){
+            var unique=''; //deklarasi variabel
+            for(var i=0; i<string.length; i++){
+                if(unique.indexOf(string[i])==-1){
+                    unique += string[i];
+                }
+            }
+            return unique;
+        }
+        alert("Huruf yang tidak terduplikat: " + removeDuplicate(unique));
+    </script>
+</body>
+</html>

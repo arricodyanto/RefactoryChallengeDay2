@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd & Even Numbers</title>
+</head>
+<body>
+    <h1>Program Angka Ganjil dan Genap</h1>
+
+    <p>
+        Did not see the alert window? Please
+        <button onClick="window.location.reload();">Reload</button> this page.
+
+    </p>
+    <script>
+        const angka = prompt("Masukkan angka: "); //Ambil inputan
+        
+        //cek apakah angka
+        if(typeof angka == 'number') {
+            //Percabangan
+            if(angka%2 == 0) { //jika genap
+                alert("Angka yang anda masukkan adalah angka genap.");
+                //console.log("Angka yang anda masukkan adalah angka genap.");
+            }
+            else { //jika ganjil
+                alert("Angka yang anda masukkan adalah angka ganjil.");
+            }
+        } else {
+            alert("Data yang anda masukkan bukan angka.");
+        }
+    </script>
+</body>
+</html>

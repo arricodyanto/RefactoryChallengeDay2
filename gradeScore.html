@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade from Score</title>
+</head>
+<body>
+    <h1>Program Cek Grade Nilai</h1>
+
+    <p>
+        Did not see the alert window? Please
+        <button onClick="window.location.reload();">Reload</button> this page.
+
+    </p>
+    <script>
+        const angka = prompt("Masukkan nilai yang anda miliki: "); //Ambil inputan
+        
+        //cek apakah angka memenuhi skala 1-100
+        if(angka <= 100 && angka >= 0) {
+            
+            if(angka <= 40) { //jika kurang dari 40
+                alert("Grade Nilai Anda adalah 'E' !");
+            }
+            else if(angka <= 65) { //jika kurang dari 65
+                alert("Grade Nilai Anda adalah 'D' !");
+            }
+            else if(angka <= 71) { //jika kurang dari 71
+                alert("Grade Nilai Anda adalah 'C' !");
+            }
+            else if(angka <= 76) { //jika kurang dari 71
+                alert("Grade Nilai Anda adalah 'B' !");
+            }
+            else if(angka >= 85) { //jika kurang dari 71
+                alert("Grade Nilai Anda adalah 'A' !");
+            }
+        }else {
+            alert("Format nilai yang Anda masukkan salah!")
+        }
+    </script>
+</body>
+</html>
